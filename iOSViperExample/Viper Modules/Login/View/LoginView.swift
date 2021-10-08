@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: UIViewController {
+class LoginView: MasterViewController {
     //MARK: - UIElements
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -26,20 +26,12 @@ class LoginView: UIViewController {
     //MARK: - Lifecycle Management
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addGradient()
+        self.initialConfiguration()
     }
     
     //MARK: - Configuration Management
-    private func addGradient() {
-        let colorTop = UIColor.systemBlue.cgColor
-        let colorBottom = UIColor.white.cgColor
-
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.frame
-        gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 0.25]
-        
-        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    private func initialConfiguration() {
+        self.addGradient(topColor: UIColor.systemBlue)
     }
     
     //MARK: - IBActions

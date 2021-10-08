@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DogsView: UIViewController {
+class DogsView: MasterViewController {
     //MARK: - UIElements
     
     //MARK: - EventHandler
@@ -16,7 +16,11 @@ class DogsView: UIViewController {
     //MARK: - Lifecycle Management
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.systemBackground
-        // Do any additional setup after loading the view.
+        self.initialConfiguration()
+    }
+    
+    //MARK: - Configuration management
+    private func initialConfiguration() {
+        self.addGradient(topColor: UIColor.systemRed)
     }
 }

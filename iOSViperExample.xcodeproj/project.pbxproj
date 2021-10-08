@@ -22,11 +22,20 @@
 		B23885352710032B00E25B5B /* DogsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23885332710032B00E25B5B /* DogsView.xib */; };
 		B23885372710037600E25B5B /* DogsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885362710037600E25B5B /* DogsWireframe.swift */; };
 		B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388538271003BC00E25B5B /* DogsPresenter.swift */; };
-		B238853B271003F200E25B5B /* DogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853A271003F200E25B5B /* DogEntity.swift */; };
+		B238853B271003F200E25B5B /* PetEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853A271003F200E25B5B /* PetEntity.swift */; };
 		B238853D2710042F00E25B5B /* DogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853C2710042F00E25B5B /* DogsInteractor.swift */; };
 		B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853E2710045F00E25B5B /* DogsProviderProtocol.swift */; };
 		B23885412710047D00E25B5B /* DogsOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885402710047D00E25B5B /* DogsOutputProtocol.swift */; };
 		B2388543271005B700E25B5B /* DogsEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388542271005B700E25B5B /* DogsEventHandlerProtocol.swift */; };
+		B238854A2710115300E25B5B /* CatsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885492710115300E25B5B /* CatsWireframe.swift */; };
+		B238854C271011C300E25B5B /* CatsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238854B271011C300E25B5B /* CatsPresenter.swift */; };
+		B238854E2710120300E25B5B /* CatsOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238854D2710120300E25B5B /* CatsOutputProtocol.swift */; };
+		B23885502710122C00E25B5B /* CatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238854F2710122C00E25B5B /* CatsInteractor.swift */; };
+		B2388552271012D100E25B5B /* CatsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388551271012D100E25B5B /* CatsProviderProtocol.swift */; };
+		B2388555271012F100E25B5B /* CatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388553271012F100E25B5B /* CatsView.swift */; };
+		B2388556271012F100E25B5B /* CatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2388554271012F100E25B5B /* CatsView.xib */; };
+		B23885582710132200E25B5B /* CatsEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885572710132200E25B5B /* CatsEventHandlerProtocol.swift */; };
+		B238855B271013D500E25B5B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238855A271013D500E25B5B /* MasterViewController.swift */; };
 		B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF3270FC493001DA7A4 /* AppDelegate.swift */; };
 		B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */; };
 		B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF7270FC493001DA7A4 /* ViewController.swift */; };
@@ -77,11 +86,20 @@
 		B23885332710032B00E25B5B /* DogsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogsView.xib; sourceTree = "<group>"; };
 		B23885362710037600E25B5B /* DogsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsWireframe.swift; sourceTree = "<group>"; };
 		B2388538271003BC00E25B5B /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
-		B238853A271003F200E25B5B /* DogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogEntity.swift; sourceTree = "<group>"; };
+		B238853A271003F200E25B5B /* PetEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetEntity.swift; sourceTree = "<group>"; };
 		B238853C2710042F00E25B5B /* DogsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsInteractor.swift; sourceTree = "<group>"; };
 		B238853E2710045F00E25B5B /* DogsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsProviderProtocol.swift; sourceTree = "<group>"; };
 		B23885402710047D00E25B5B /* DogsOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsOutputProtocol.swift; sourceTree = "<group>"; };
 		B2388542271005B700E25B5B /* DogsEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		B23885492710115300E25B5B /* CatsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsWireframe.swift; sourceTree = "<group>"; };
+		B238854B271011C300E25B5B /* CatsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsPresenter.swift; sourceTree = "<group>"; };
+		B238854D2710120300E25B5B /* CatsOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsOutputProtocol.swift; sourceTree = "<group>"; };
+		B238854F2710122C00E25B5B /* CatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsInteractor.swift; sourceTree = "<group>"; };
+		B2388551271012D100E25B5B /* CatsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsProviderProtocol.swift; sourceTree = "<group>"; };
+		B2388553271012F100E25B5B /* CatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsView.swift; sourceTree = "<group>"; };
+		B2388554271012F100E25B5B /* CatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatsView.xib; sourceTree = "<group>"; };
+		B23885572710132200E25B5B /* CatsEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		B238855A271013D500E25B5B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		B2955FF0270FC493001DA7A4 /* iOSViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2955FF3270FC493001DA7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +168,7 @@
 		B238852E271002D700E25B5B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				B238853A271003F200E25B5B /* DogEntity.swift */,
+				B238853A271003F200E25B5B /* PetEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -183,6 +201,57 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B2388544271010E500E25B5B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B23885492710115300E25B5B /* CatsWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B2388545271010F000E25B5B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B23885462710110B00E25B5B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B238854D2710120300E25B5B /* CatsOutputProtocol.swift */,
+				B238854B271011C300E25B5B /* CatsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B23885472710111200E25B5B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B2388551271012D100E25B5B /* CatsProviderProtocol.swift */,
+				B238854F2710122C00E25B5B /* CatsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B23885482710111A00E25B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B23885572710132200E25B5B /* CatsEventHandlerProtocol.swift */,
+				B2388553271012F100E25B5B /* CatsView.swift */,
+				B2388554271012F100E25B5B /* CatsView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2388559271013C100E25B5B /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				B238855A271013D500E25B5B /* MasterViewController.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
 		B2955FE7270FC493001DA7A4 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +275,7 @@
 		B2955FF2270FC493001DA7A4 /* iOSViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				B2388559271013C100E25B5B /* Master */,
 				B238851A270FD66500E25B5B /* Viper Protocols */,
 				B2956026270FC4EC001DA7A4 /* Viper Modules */,
 				B2955FF3270FC493001DA7A4 /* AppDelegate.swift */,
@@ -368,6 +438,11 @@
 		B2956034270FC71F001DA7A4 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
+				B23885482710111A00E25B5B /* View */,
+				B23885472710111200E25B5B /* Interactor */,
+				B23885462710110B00E25B5B /* Presenter */,
+				B2388545271010F000E25B5B /* Entity */,
+				B2388544271010E500E25B5B /* Router */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -503,6 +578,7 @@
 			files = (
 				B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */,
 				B23885352710032B00E25B5B /* DogsView.xib in Resources */,
+				B2388556271012F100E25B5B /* CatsView.xib in Resources */,
 				B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */,
 				B295603C270FC97E001DA7A4 /* LoginView.xib in Resources */,
 			);
@@ -532,9 +608,11 @@
 				B2388543271005B700E25B5B /* DogsEventHandlerProtocol.swift in Sources */,
 				B23885342710032B00E25B5B /* DogsView.swift in Sources */,
 				B23885372710037600E25B5B /* DogsWireframe.swift in Sources */,
+				B238854C271011C300E25B5B /* CatsPresenter.swift in Sources */,
 				B238851E270FD75900E25B5B /* ViperPresenter.swift in Sources */,
 				B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */,
 				B2955FFE270FC493001DA7A4 /* iOSViperExample.xcdatamodeld in Sources */,
+				B238854E2710120300E25B5B /* CatsOutputProtocol.swift in Sources */,
 				B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */,
 				B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */,
 				B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */,
@@ -544,16 +622,22 @@
 				B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */,
 				B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */,
 				B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */,
+				B2388552271012D100E25B5B /* CatsProviderProtocol.swift in Sources */,
 				B238853D2710042F00E25B5B /* DogsInteractor.swift in Sources */,
+				B2388555271012F100E25B5B /* CatsView.swift in Sources */,
 				B295603B270FC97E001DA7A4 /* LoginView.swift in Sources */,
 				B2956044270FC9F9001DA7A4 /* LoginResponseEntity.swift in Sources */,
 				B23885412710047D00E25B5B /* DogsOutputProtocol.swift in Sources */,
+				B23885502710122C00E25B5B /* CatsInteractor.swift in Sources */,
 				B2388520270FD7E100E25B5B /* ViperView.swift in Sources */,
-				B238853B271003F200E25B5B /* DogEntity.swift in Sources */,
+				B238854A2710115300E25B5B /* CatsWireframe.swift in Sources */,
+				B23885582710132200E25B5B /* CatsEventHandlerProtocol.swift in Sources */,
+				B238853B271003F200E25B5B /* PetEntity.swift in Sources */,
 				B238852C2710010D00E25B5B /* HomeTabBarItemEntity.swift in Sources */,
 				B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */,
 				B2388517270FCC2600E25B5B /* LoginWireframe.swift in Sources */,
 				B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */,
+				B238855B271013D500E25B5B /* MasterViewController.swift in Sources */,
 				B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */,
 				B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */,
 				B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */,

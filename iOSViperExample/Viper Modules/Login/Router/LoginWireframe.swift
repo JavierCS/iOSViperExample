@@ -36,8 +36,10 @@ class LoginWireframe: ViperRouter {
     func goToHome() {
         guard let homeTabBarWireframe = HomeTabBarWireframe.obtain() as? HomeTabBarWireframe else { return }
         let dogsWireframe = DogsWireframe.instance()
+        let catsWireframe = CatsWireframe.instance()
         homeTabBarWireframe.setTabBarItems([
-            dogsWireframe.asHomeTabBarItemEntity()
+            dogsWireframe.asHomeTabBarItemEntity(),
+            catsWireframe.asHomeTabBarItemEntity()
         ])
         let navigationController = UINavigationController(rootViewController: homeTabBarWireframe.entry)
         navigationController.modalPresentationStyle = .fullScreen
