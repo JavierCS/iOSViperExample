@@ -7,16 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2388517270FCC2600E25B5B /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388516270FCC2600E25B5B /* LoginWireframe.swift */; };
+		B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388518270FD16700E25B5B /* LoginEventHandlerProtocol.swift */; };
+		B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238851B270FD68700E25B5B /* ViperRouter.swift */; };
+		B238851E270FD75900E25B5B /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238851D270FD75900E25B5B /* ViperPresenter.swift */; };
+		B2388520270FD7E100E25B5B /* ViperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238851F270FD7E100E25B5B /* ViperView.swift */; };
+		B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388521270FD80C00E25B5B /* ViperInteractor.swift */; };
+		B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388523270FDA5800E25B5B /* LoginProviderProtocol.swift */; };
+		B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388525270FDB6900E25B5B /* LoginOutputProtocol.swift */; };
 		B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF3270FC493001DA7A4 /* AppDelegate.swift */; };
 		B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */; };
 		B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF7270FC493001DA7A4 /* ViewController.swift */; };
-		B2955FFB270FC493001DA7A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2955FF9270FC493001DA7A4 /* Main.storyboard */; };
 		B2955FFE270FC493001DA7A4 /* iOSViperExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2955FFC270FC493001DA7A4 /* iOSViperExample.xcdatamodeld */; };
 		B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2955FFF270FC495001DA7A4 /* Assets.xcassets */; };
 		B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2956001270FC495001DA7A4 /* LaunchScreen.storyboard */; };
 		B295600E270FC496001DA7A4 /* iOSViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295600D270FC496001DA7A4 /* iOSViperExampleTests.swift */; };
 		B2956018270FC496001DA7A4 /* iOSViperExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956017270FC496001DA7A4 /* iOSViperExampleUITests.swift */; };
 		B295601A270FC496001DA7A4 /* iOSViperExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956019270FC496001DA7A4 /* iOSViperExampleUITestsLaunchTests.swift */; };
+		B295603B270FC97E001DA7A4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956039270FC97E001DA7A4 /* LoginView.swift */; };
+		B295603C270FC97E001DA7A4 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B295603A270FC97E001DA7A4 /* LoginView.xib */; };
+		B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295603D270FC99E001DA7A4 /* LoginInteractor.swift */; };
+		B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295603F270FC9D5001DA7A4 /* LoginPresenter.swift */; };
+		B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956041270FC9EC001DA7A4 /* LoginRequestEntity.swift */; };
+		B2956044270FC9F9001DA7A4 /* LoginResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956043270FC9F9001DA7A4 /* LoginResponseEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B2388516270FCC2600E25B5B /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		B2388518270FD16700E25B5B /* LoginEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		B238851B270FD68700E25B5B /* ViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+		B238851D270FD75900E25B5B /* ViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
+		B238851F270FD7E100E25B5B /* ViperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperView.swift; sourceTree = "<group>"; };
+		B2388521270FD80C00E25B5B /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		B2388523270FDA5800E25B5B /* LoginProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderProtocol.swift; sourceTree = "<group>"; };
+		B2388525270FDB6900E25B5B /* LoginOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOutputProtocol.swift; sourceTree = "<group>"; };
 		B2955FF0270FC493001DA7A4 /* iOSViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2955FF3270FC493001DA7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B2955FF7270FC493001DA7A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2955FFA270FC493001DA7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2955FFD270FC493001DA7A4 /* iOSViperExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSViperExample.xcdatamodel; sourceTree = "<group>"; };
 		B2955FFF270FC495001DA7A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2956002270FC495001DA7A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +71,12 @@
 		B2956013270FC496001DA7A4 /* iOSViperExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSViperExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2956017270FC496001DA7A4 /* iOSViperExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViperExampleUITests.swift; sourceTree = "<group>"; };
 		B2956019270FC496001DA7A4 /* iOSViperExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSViperExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2956039270FC97E001DA7A4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B295603A270FC97E001DA7A4 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		B295603D270FC99E001DA7A4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B295603F270FC9D5001DA7A4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B2956041270FC9EC001DA7A4 /* LoginRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestEntity.swift; sourceTree = "<group>"; };
+		B2956043270FC9F9001DA7A4 /* LoginResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B238851A270FD66500E25B5B /* Viper Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B238851B270FD68700E25B5B /* ViperRouter.swift */,
+				B238851D270FD75900E25B5B /* ViperPresenter.swift */,
+				B238851F270FD7E100E25B5B /* ViperView.swift */,
+				B2388521270FD80C00E25B5B /* ViperInteractor.swift */,
+			);
+			path = "Viper Protocols";
+			sourceTree = "<group>";
+		};
 		B2955FE7270FC493001DA7A4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +138,11 @@
 		B2955FF2270FC493001DA7A4 /* iOSViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				B238851A270FD66500E25B5B /* Viper Protocols */,
+				B2956026270FC4EC001DA7A4 /* Viper Modules */,
 				B2955FF3270FC493001DA7A4 /* AppDelegate.swift */,
 				B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */,
 				B2955FF7270FC493001DA7A4 /* ViewController.swift */,
-				B2955FF9270FC493001DA7A4 /* Main.storyboard */,
 				B2955FFF270FC495001DA7A4 /* Assets.xcassets */,
 				B2956001270FC495001DA7A4 /* LaunchScreen.storyboard */,
 				B2956004270FC495001DA7A4 /* Info.plist */,
@@ -128,6 +166,159 @@
 				B2956019270FC496001DA7A4 /* iOSViperExampleUITestsLaunchTests.swift */,
 			);
 			path = iOSViperExampleUITests;
+			sourceTree = "<group>";
+		};
+		B2956026270FC4EC001DA7A4 /* Viper Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B2956037270FC774001DA7A4 /* Home Sections */,
+				B2956028270FC55C001DA7A4 /* Home */,
+				B2956027270FC552001DA7A4 /* Login */,
+			);
+			path = "Viper Modules";
+			sourceTree = "<group>";
+		};
+		B2956027270FC552001DA7A4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B2956032270FC6BC001DA7A4 /* View */,
+				B2956031270FC6B4001DA7A4 /* Interactor */,
+				B2956030270FC69E001DA7A4 /* Presenter */,
+				B295602F270FC697001DA7A4 /* Entity */,
+				B295602E270FC68F001DA7A4 /* Router */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2956028270FC55C001DA7A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2956029270FC5AB001DA7A4 /* View */,
+				B295602A270FC5B9001DA7A4 /* Interactor */,
+				B295602B270FC5E1001DA7A4 /* Presenter */,
+				B295602C270FC635001DA7A4 /* Entity */,
+				B295602D270FC640001DA7A4 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B2956029270FC5AB001DA7A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B295602A270FC5B9001DA7A4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B295602B270FC5E1001DA7A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B295602C270FC635001DA7A4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B295602D270FC640001DA7A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B295602E270FC68F001DA7A4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B2388516270FCC2600E25B5B /* LoginWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B295602F270FC697001DA7A4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B2956041270FC9EC001DA7A4 /* LoginRequestEntity.swift */,
+				B2956043270FC9F9001DA7A4 /* LoginResponseEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B2956030270FC69E001DA7A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2388525270FDB6900E25B5B /* LoginOutputProtocol.swift */,
+				B295603F270FC9D5001DA7A4 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B2956031270FC6B4001DA7A4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B2388523270FDA5800E25B5B /* LoginProviderProtocol.swift */,
+				B295603D270FC99E001DA7A4 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B2956032270FC6BC001DA7A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2388518270FD16700E25B5B /* LoginEventHandlerProtocol.swift */,
+				B2956039270FC97E001DA7A4 /* LoginView.swift */,
+				B295603A270FC97E001DA7A4 /* LoginView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2956033270FC715001DA7A4 /* Dogs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dogs;
+			sourceTree = "<group>";
+		};
+		B2956034270FC71F001DA7A4 /* Cats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cats;
+			sourceTree = "<group>";
+		};
+		B2956035270FC731001DA7A4 /* Other Pets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Other Pets";
+			sourceTree = "<group>";
+		};
+		B2956037270FC774001DA7A4 /* Home Sections */ = {
+			isa = PBXGroup;
+			children = (
+				B2956038270FC810001DA7A4 /* Profile */,
+				B2956034270FC71F001DA7A4 /* Cats */,
+				B2956035270FC731001DA7A4 /* Other Pets */,
+				B2956033270FC715001DA7A4 /* Dogs */,
+			);
+			path = "Home Sections";
+			sourceTree = "<group>";
+		};
+		B2956038270FC810001DA7A4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +427,7 @@
 			files = (
 				B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */,
 				B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */,
-				B2955FFB270FC493001DA7A4 /* Main.storyboard in Resources */,
+				B295603C270FC97E001DA7A4 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +452,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B238851E270FD75900E25B5B /* ViperPresenter.swift in Sources */,
 				B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */,
 				B2955FFE270FC493001DA7A4 /* iOSViperExample.xcdatamodeld in Sources */,
+				B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */,
+				B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */,
+				B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */,
+				B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */,
 				B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */,
+				B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */,
+				B295603B270FC97E001DA7A4 /* LoginView.swift in Sources */,
+				B2956044270FC9F9001DA7A4 /* LoginResponseEntity.swift in Sources */,
+				B2388520270FD7E100E25B5B /* ViperView.swift in Sources */,
+				B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */,
+				B2388517270FCC2600E25B5B /* LoginWireframe.swift in Sources */,
+				B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */,
 				B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */,
+				B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +505,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2955FF9270FC493001DA7A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2955FFA270FC493001DA7A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2956001270FC495001DA7A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -448,7 +644,6 @@
 				INFOPLIST_FILE = iOSViperExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,7 +671,6 @@
 				INFOPLIST_FILE = iOSViperExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
