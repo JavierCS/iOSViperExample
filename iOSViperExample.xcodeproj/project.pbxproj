@@ -15,6 +15,18 @@
 		B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388521270FD80C00E25B5B /* ViperInteractor.swift */; };
 		B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388523270FDA5800E25B5B /* LoginProviderProtocol.swift */; };
 		B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388525270FDB6900E25B5B /* LoginOutputProtocol.swift */; };
+		B2388528270FF32900E25B5B /* HomeTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388527270FF32900E25B5B /* HomeTabBarView.swift */; };
+		B238852A270FF99200E25B5B /* HomeTabBarWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388529270FF99200E25B5B /* HomeTabBarWireframe.swift */; };
+		B238852C2710010D00E25B5B /* HomeTabBarItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238852B2710010D00E25B5B /* HomeTabBarItemEntity.swift */; };
+		B23885342710032B00E25B5B /* DogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885322710032B00E25B5B /* DogsView.swift */; };
+		B23885352710032B00E25B5B /* DogsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23885332710032B00E25B5B /* DogsView.xib */; };
+		B23885372710037600E25B5B /* DogsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885362710037600E25B5B /* DogsWireframe.swift */; };
+		B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388538271003BC00E25B5B /* DogsPresenter.swift */; };
+		B238853B271003F200E25B5B /* DogEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853A271003F200E25B5B /* DogEntity.swift */; };
+		B238853D2710042F00E25B5B /* DogsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853C2710042F00E25B5B /* DogsInteractor.swift */; };
+		B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B238853E2710045F00E25B5B /* DogsProviderProtocol.swift */; };
+		B23885412710047D00E25B5B /* DogsOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23885402710047D00E25B5B /* DogsOutputProtocol.swift */; };
+		B2388543271005B700E25B5B /* DogsEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2388542271005B700E25B5B /* DogsEventHandlerProtocol.swift */; };
 		B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF3270FC493001DA7A4 /* AppDelegate.swift */; };
 		B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */; };
 		B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2955FF7270FC493001DA7A4 /* ViewController.swift */; };
@@ -58,6 +70,18 @@
 		B2388521270FD80C00E25B5B /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
 		B2388523270FDA5800E25B5B /* LoginProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviderProtocol.swift; sourceTree = "<group>"; };
 		B2388525270FDB6900E25B5B /* LoginOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOutputProtocol.swift; sourceTree = "<group>"; };
+		B2388527270FF32900E25B5B /* HomeTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarView.swift; sourceTree = "<group>"; };
+		B2388529270FF99200E25B5B /* HomeTabBarWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarWireframe.swift; sourceTree = "<group>"; };
+		B238852B2710010D00E25B5B /* HomeTabBarItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarItemEntity.swift; sourceTree = "<group>"; };
+		B23885322710032B00E25B5B /* DogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsView.swift; sourceTree = "<group>"; };
+		B23885332710032B00E25B5B /* DogsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogsView.xib; sourceTree = "<group>"; };
+		B23885362710037600E25B5B /* DogsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsWireframe.swift; sourceTree = "<group>"; };
+		B2388538271003BC00E25B5B /* DogsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPresenter.swift; sourceTree = "<group>"; };
+		B238853A271003F200E25B5B /* DogEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogEntity.swift; sourceTree = "<group>"; };
+		B238853C2710042F00E25B5B /* DogsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsInteractor.swift; sourceTree = "<group>"; };
+		B238853E2710045F00E25B5B /* DogsProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsProviderProtocol.swift; sourceTree = "<group>"; };
+		B23885402710047D00E25B5B /* DogsOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsOutputProtocol.swift; sourceTree = "<group>"; };
+		B2388542271005B700E25B5B /* DogsEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsEventHandlerProtocol.swift; sourceTree = "<group>"; };
 		B2955FF0270FC493001DA7A4 /* iOSViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2955FF3270FC493001DA7A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2955FF5270FC493001DA7A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +137,50 @@
 				B2388521270FD80C00E25B5B /* ViperInteractor.swift */,
 			);
 			path = "Viper Protocols";
+			sourceTree = "<group>";
+		};
+		B238852D271002CE00E25B5B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B23885362710037600E25B5B /* DogsWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B238852E271002D700E25B5B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B238853A271003F200E25B5B /* DogEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B238852F271002DE00E25B5B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B23885402710047D00E25B5B /* DogsOutputProtocol.swift */,
+				B2388538271003BC00E25B5B /* DogsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B2388530271002E400E25B5B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B238853E2710045F00E25B5B /* DogsProviderProtocol.swift */,
+				B238853C2710042F00E25B5B /* DogsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B2388531271002FE00E25B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2388542271005B700E25B5B /* DogsEventHandlerProtocol.swift */,
+				B23885322710032B00E25B5B /* DogsView.swift */,
+				B23885332710032B00E25B5B /* DogsView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B2955FE7270FC493001DA7A4 = {
@@ -205,6 +273,7 @@
 		B2956029270FC5AB001DA7A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2388527270FF32900E25B5B /* HomeTabBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +295,7 @@
 		B295602C270FC635001DA7A4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B238852B2710010D00E25B5B /* HomeTabBarItemEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -233,6 +303,7 @@
 		B295602D270FC640001DA7A4 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B2388529270FF99200E25B5B /* HomeTabBarWireframe.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -285,6 +356,11 @@
 		B2956033270FC715001DA7A4 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
+				B2388531271002FE00E25B5B /* View */,
+				B2388530271002E400E25B5B /* Interactor */,
+				B238852F271002DE00E25B5B /* Presenter */,
+				B238852E271002D700E25B5B /* Entity */,
+				B238852D271002CE00E25B5B /* Router */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -426,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */,
+				B23885352710032B00E25B5B /* DogsView.xib in Resources */,
 				B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */,
 				B295603C270FC97E001DA7A4 /* LoginView.xib in Resources */,
 			);
@@ -452,21 +529,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2388543271005B700E25B5B /* DogsEventHandlerProtocol.swift in Sources */,
+				B23885342710032B00E25B5B /* DogsView.swift in Sources */,
+				B23885372710037600E25B5B /* DogsWireframe.swift in Sources */,
 				B238851E270FD75900E25B5B /* ViperPresenter.swift in Sources */,
 				B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */,
 				B2955FFE270FC493001DA7A4 /* iOSViperExample.xcdatamodeld in Sources */,
 				B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */,
+				B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */,
 				B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */,
+				B2388528270FF32900E25B5B /* HomeTabBarView.swift in Sources */,
+				B238852A270FF99200E25B5B /* HomeTabBarWireframe.swift in Sources */,
 				B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */,
 				B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */,
 				B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */,
 				B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */,
+				B238853D2710042F00E25B5B /* DogsInteractor.swift in Sources */,
 				B295603B270FC97E001DA7A4 /* LoginView.swift in Sources */,
 				B2956044270FC9F9001DA7A4 /* LoginResponseEntity.swift in Sources */,
+				B23885412710047D00E25B5B /* DogsOutputProtocol.swift in Sources */,
 				B2388520270FD7E100E25B5B /* ViperView.swift in Sources */,
+				B238853B271003F200E25B5B /* DogEntity.swift in Sources */,
+				B238852C2710010D00E25B5B /* HomeTabBarItemEntity.swift in Sources */,
 				B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */,
 				B2388517270FCC2600E25B5B /* LoginWireframe.swift in Sources */,
 				B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */,
+				B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */,
 				B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */,
 				B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */,
 			);

@@ -6,7 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ViperRouter {
-    static func obtain() -> ViperRouter
+    var entry: UIViewController! { get set }
+}
+
+protocol TabBarRouterItem {
+    func asHomeTabBarItemEntity() -> HomeTabBarItemEntity
 }

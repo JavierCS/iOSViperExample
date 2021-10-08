@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 ///Entry point for the VIPER Module
-class LoginWireframe {
-    var entry: LoginView!
-    weak var presenter: LoginPresenter!
+class LoginWireframe: ViperRouter {
+    var entry: UIViewController!
+    var presenter: LoginPresenter!
     
     static func instance() -> LoginWireframe {
         let view = LoginView.instance()
@@ -30,5 +31,16 @@ class LoginWireframe {
         router.entry = view
         
         return router
+    }
+    
+    func goToHome() {
+        guard let homeTabBarWireframe = HomeTabBarWireframe.obtain() as? HomeTabBarWireframe else { return }
+        let dogsWireframe = DogsWireframe.instance()
+        homeTabBarWireframe.setTabBarItems([
+            dogsWireframe.asHomeTabBarItemEntity()
+        ])
+        let navigationController = UINavigationController(rootViewController: homeTabBarWireframe.entry)
+        navigationController.modalPresentationStyle = .fullScreen
+        self.entry.navigationController?.present(navigationController, animated: true)
     }
 }

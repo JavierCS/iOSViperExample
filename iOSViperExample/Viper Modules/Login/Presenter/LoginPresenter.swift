@@ -8,11 +8,8 @@
 import Foundation
 
 class LoginPresenter {
-    ///Reference to Router
     var wireframe: LoginWireframe?
-    ///Reference to Interactor
     var interactor: LoginProvider?
-    ///Reference to View
     var view: LoginView?
 }
 
@@ -26,7 +23,7 @@ extension LoginPresenter: LoginEventHandler {
     }
     
     func didTouchAboutThisAppButton() {
-        
+        self.wireframe?.goToHome()
     }
 }
 
