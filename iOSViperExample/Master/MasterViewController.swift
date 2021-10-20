@@ -9,14 +9,21 @@ import Foundation
 import UIKit
 
 class MasterViewController: UIViewController {
-    func addGradient(topColor: UIColor, bottomColor: UIColor = UIColor.systemBackground) {
-        let colorTop = topColor.cgColor
-        let colorBottom = bottomColor.cgColor
+    var topColor: UIColor = UIColor.systemBlue
+    var bottomColor: UIColor = UIColor.systemBackground
+    
+    func addGradient(topColor: UIColor? = nil, bottomColor: UIColor? = nil) {
+        if let topColor = topColor {
+            self.topColor = topColor
+        }
+        if let bottomColor = bottomColor {
+            self.bottomColor = bottomColor
+        }
 
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = UIScreen.main.bounds
-        gradientLayer.colors = [colorTop, colorBottom]
-        gradientLayer.locations = [0.0, 0.25]
+        gradientLayer.colors = [self.topColor.cgColor, self.bottomColor.cgColor]
+        gradientLayer.locations = [0.0, 0.30]
         
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }

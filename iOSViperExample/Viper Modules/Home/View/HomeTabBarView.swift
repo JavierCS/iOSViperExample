@@ -14,6 +14,7 @@ class HomeTabBarView: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemBackground
+        self.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,5 +37,16 @@ class HomeTabBarView: UITabBarController {
     
     func setTabBarItems(_ items: [HomeTabBarItemEntity]) {
         self.items = items
+        guard let masterVC = items.first?.wireframe.entry as? MasterViewController else { return }
+        self.tabBar.tintColor = masterVC.topColor
+    }
+}
+
+//MARK: - UITabBarControllerDelegate Management
+extension HomeTabBarView: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        guard let index = self.viewControllers?.firstIndex(of: viewController),
+              let controller = self.items[index].wireframe.entry as? MasterViewController else  { return }
+        self.tabBar.tintColor = controller.topColor
     }
 }

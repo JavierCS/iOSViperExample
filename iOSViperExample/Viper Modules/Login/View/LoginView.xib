@@ -77,6 +77,10 @@
                         <action selector="didTouchAboutThisAppButton:" destination="-1" eventType="touchUpInside" id="pGl-bk-VIE"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetLogo" translatesAutoresizingMaskIntoConstraints="NO" id="7KZ-mr-jji">
+                    <rect key="frame" x="0.0" y="74" width="414" height="260"/>
+                    <color key="tintColor" systemColor="tintColor"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,6 +88,10 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0rj-Pr-mse" secondAttribute="trailing" constant="20" id="DsW-xv-c70"/>
                 <constraint firstItem="p7R-RA-fnN" firstAttribute="top" secondItem="0rj-Pr-mse" secondAttribute="bottom" constant="50" id="Edq-qY-eV5"/>
                 <constraint firstItem="QXG-QF-Wml" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="He5-aC-ibi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7KZ-mr-jji" secondAttribute="trailing" id="MS8-98-fJ1"/>
+                <constraint firstItem="0rj-Pr-mse" firstAttribute="top" secondItem="7KZ-mr-jji" secondAttribute="bottom" constant="30" id="RGz-Ju-ern"/>
+                <constraint firstItem="7KZ-mr-jji" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="UFG-le-zaV"/>
+                <constraint firstItem="7KZ-mr-jji" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zw6-7c-QQn"/>
                 <constraint firstItem="p7R-RA-fnN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="cdz-jc-17E"/>
                 <constraint firstItem="0rj-Pr-mse" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fTh-UO-GP0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p7R-RA-fnN" secondAttribute="trailing" constant="20" id="hZW-Zf-a4S"/>
@@ -96,8 +104,12 @@
         </view>
     </objects>
     <resources>
+        <image name="PetLogo" width="840" height="793"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

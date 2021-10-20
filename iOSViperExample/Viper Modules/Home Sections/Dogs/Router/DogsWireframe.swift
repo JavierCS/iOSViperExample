@@ -35,6 +35,7 @@ class DogsWireframe: ViperRouter, TabBarRouterItem {
     func asHomeTabBarItemEntity() -> HomeTabBarItemEntity {
         return HomeTabBarItemEntity(name: "Perros",
                                     image: UIImage(named: "dogIcon")!,
+                                    color: UIColor.systemMint,
                                     wireframe: self)
     }
 }

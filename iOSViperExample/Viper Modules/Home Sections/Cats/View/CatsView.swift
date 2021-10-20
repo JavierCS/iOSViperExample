@@ -19,6 +19,6 @@ class CatsView: MasterViewController {
     
     //MARK: - Configuration Management
     private func initialConfiguration() {
-        self.addGradient(topColor: UIColor.systemCyan)
+        self.addGradient()
     }
 }

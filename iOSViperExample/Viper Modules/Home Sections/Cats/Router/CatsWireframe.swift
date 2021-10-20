@@ -35,6 +35,7 @@ class CatsWireframe: ViperRouter, TabBarRouterItem {
     func asHomeTabBarItemEntity() -> HomeTabBarItemEntity {
         return HomeTabBarItemEntity(name: "Gatos",
                                     image: UIImage(named: "catIcon")!,
+                                    color: UIColor.systemPurple,
                                     wireframe: self)
     }
 }

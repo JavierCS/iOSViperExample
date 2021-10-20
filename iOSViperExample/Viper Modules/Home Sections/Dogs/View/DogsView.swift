@@ -21,6 +21,6 @@ class DogsView: MasterViewController {
     
     //MARK: - Configuration management
     private func initialConfiguration() {
-        self.addGradient(topColor: UIColor.systemRed)
+        self.addGradient()
     }
 }
