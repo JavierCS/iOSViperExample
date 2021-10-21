@@ -13,7 +13,7 @@ class AdoptView: UIViewController {
     @IBOutlet weak var petNameLabel: UILabel!
     @IBOutlet weak var petAgeLabel: UILabel!
     @IBOutlet weak var petSexLabel: UILabel!
-    @IBOutlet weak var petRaceLabel: UILabel!
+    @IBOutlet weak var petBreedLabel: UILabel!
     @IBOutlet weak var petDescriptionLabel: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var adoptButton: UIButton!
@@ -27,13 +27,15 @@ class AdoptView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialConfiguration()
-        
-        
     }
     
     //MARK: - Configuration Management
     private func initialConfiguration() {
-        
+        self.petNameLabel.text = self.petToAdopt.name
+        self.petAgeLabel.text = self.petToAdopt.age
+        self.petSexLabel.text = self.petToAdopt.sex
+        self.petBreedLabel.text = self.petToAdopt.breed
+        self.petDescriptionLabel.text = self.petToAdopt.description
     }
     
     //MARK: - UIElements Actions

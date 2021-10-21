@@ -14,7 +14,7 @@ class DogListTableViewCell: UITableViewCell {
     @IBOutlet weak var dogNameLabel: UILabel!
     @IBOutlet weak var dogAgeLabel: UILabel!
     @IBOutlet weak var dogSexLabel: UILabel!
-    @IBOutlet weak var dogRaceLabel: UILabel!
+    @IBOutlet weak var dogBreedLabel: UILabel!
     @IBOutlet weak var dogDescriptionLabel: UILabel!
     
     private var pet: PetEntity?
@@ -35,7 +35,7 @@ class DogListTableViewCell: UITableViewCell {
         self.dogNameLabel.text = dog.name
         self.dogAgeLabel.text = dog.age
         self.dogSexLabel.text = dog.sex
-        self.dogRaceLabel.text = dog.race
+        self.dogBreedLabel.text = dog.breed
         self.dogDescriptionLabel.text = dog.description
     }
 }

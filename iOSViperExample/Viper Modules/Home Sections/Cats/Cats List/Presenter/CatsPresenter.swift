@@ -33,7 +33,7 @@ extension CatsPresenter: CatsOutputProtocol {
         case .success(let cats):
             self.view?.showCats(cats)
         case .failure(let error):
-            self.view?.showError(message: error.localizedDescription)
+            self.view?.showAlert(message: error.localizedDescription)
         }
     }
 }

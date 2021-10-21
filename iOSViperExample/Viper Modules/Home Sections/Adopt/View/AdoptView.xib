@@ -13,10 +13,10 @@
                 <outlet property="adoptButton" destination="hys-FP-NUs" id="03s-yH-jTY"/>
                 <outlet property="cancelButton" destination="ud8-NQ-58N" id="Cjv-xZ-Onm"/>
                 <outlet property="petAgeLabel" destination="0iQ-3E-VyP" id="fTC-Mt-alf"/>
+                <outlet property="petBreedLabel" destination="j9p-fw-K6y" id="N9U-ye-RF1"/>
                 <outlet property="petDescriptionLabel" destination="xdk-wQ-BSH" id="LVq-Is-yJd"/>
                 <outlet property="petNameLabel" destination="obz-ce-mWt" id="Qu2-QP-TUk"/>
                 <outlet property="petPictureImage" destination="Rua-31-K1s" id="xI7-Gd-IWN"/>
-                <outlet property="petRaceLabel" destination="j9p-fw-K6y" id="N9U-ye-RF1"/>
                 <outlet property="petSexLabel" destination="6ya-k5-CZk" id="MCI-NW-nJL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

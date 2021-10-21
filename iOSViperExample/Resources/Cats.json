@@ -4,7 +4,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "2 años",
         "sex": "Macho",
-        "race": "Ragdoll",
+        "breed": "Ragdoll",
         "imageUrl": "https://www.dropbox.com/s/6ytoljab6f7xkig/Ragdoll.jpeg?dl=1"
     },
     {
@@ -12,7 +12,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "4 años",
         "sex": "Macho",
-        "race": "Angora Turco",
+        "breed": "Angora Turco",
         "imageUrl": "https://www.dropbox.com/s/6ynq0rd79ahu000/AngoraTurco.jpg?dl=1"
     },
     {
@@ -20,7 +20,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "3 años",
         "sex": "Hembra",
-        "race": "Esfinge",
+        "breed": "Esfinge",
         "imageUrl": "https://www.dropbox.com/s/ekhl4bslitg2ngq/Esfinge.jpg?dl=1"
     },
     {
@@ -28,7 +28,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "2 años",
         "sex": "Hembra",
-        "race": "Maine Coon",
+        "breed": "Maine Coon",
         "imageUrl": "https://www.dropbox.com/s/c7pe8b67u19342t/MaineCoon.jpg?dl=1"
     },
     {
@@ -36,7 +36,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "6 meses",
         "sex": "Hembra",
-        "race": "Munchkin",
+        "breed": "Munchkin",
         "imageUrl": "https://www.dropbox.com/s/isgfv80vfrx0399/Munchkin.jpg?dl=1"
     },
     {
@@ -44,7 +44,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "1 año",
         "sex": "Macho",
-        "race": "Persa",
+        "breed": "Persa",
         "imageUrl": "https://www.dropbox.com/s/f9tt9bqrpxrom2h/Persa.jpg?dl=1"
     },
     {
@@ -52,7 +52,7 @@
         "description": "Adopta a este lindo animalito que te acompañará por mucho tiempo, goza de buena salud y cuenta con todas sus vacunas, está listo para irse a casa contigo.",
         "age": "3 años",
         "sex": "Macho",
-        "race": "Siames",
+        "breed": "Siames",
         "imageUrl": "https://www.dropbox.com/s/dycnx0c4l78m8lx/Siames.jpg?dl=1"
     }
 ]

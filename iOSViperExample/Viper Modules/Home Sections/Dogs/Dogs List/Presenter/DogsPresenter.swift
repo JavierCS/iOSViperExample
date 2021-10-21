@@ -33,7 +33,7 @@ extension DogsPresenter: DogsOutputProtocol {
         case .success(let dogs):
             self.view?.showDogs(dogs)
         case .failure(let error):
-            self.view?.showError(message: error.localizedDescription)
+            self.view?.showAlert(message: error.localizedDescription)
         }
     }
 }

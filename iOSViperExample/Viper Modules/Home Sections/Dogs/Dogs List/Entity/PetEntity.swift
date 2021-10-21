@@ -13,7 +13,7 @@ class PetEntity: Codable {
     var description: String?
     var age: String?
     var sex: String?
-    var race: String?
+    var breed: String?
     var imageUrlString: String?
     var image: UIImage?
     
@@ -22,7 +22,7 @@ class PetEntity: Codable {
         case description = "description"
         case age = "age"
         case sex = "sex"
-        case race = "race"
+        case breed = "breed"
         case imageUrlString = "imageUrl"
     }
 }

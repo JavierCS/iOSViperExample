@@ -33,8 +33,8 @@ class MasterViewController: UIViewController {
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    func showError(message: String? = nil, style: UIAlertController.Style = .alert, handler: ((UIAlertAction) -> Void)? = nil) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: style)
+    func showAlert(title: String = "Error", message: String? = nil, style: UIAlertController.Style = .alert, handler: ((UIAlertAction) -> Void)? = nil) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: handler))
         self.navigationController?.present(alert, animated: true, completion: nil)
     }

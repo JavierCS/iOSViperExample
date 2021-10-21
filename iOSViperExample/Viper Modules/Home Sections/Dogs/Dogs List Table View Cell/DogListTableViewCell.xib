@@ -126,10 +126,10 @@
             <connections>
                 <outlet property="cardContainer" destination="epv-qe-fdw" id="TGe-Ia-ZVv"/>
                 <outlet property="dogAgeLabel" destination="3SN-Oa-pXE" id="5Fi-4f-vpK"/>
+                <outlet property="dogBreedLabel" destination="XWF-7D-K3u" id="MAq-jk-8ec"/>
                 <outlet property="dogDescriptionLabel" destination="1dM-MH-ea5" id="K4a-i5-QUW"/>
                 <outlet property="dogImage" destination="M0u-vl-E4j" id="JNX-7v-aPR"/>
                 <outlet property="dogNameLabel" destination="3WZ-XL-SDV" id="SwO-HC-hVP"/>
-                <outlet property="dogRaceLabel" destination="XWF-7D-K3u" id="MAq-jk-8ec"/>
                 <outlet property="dogSexLabel" destination="5iq-ac-XiY" id="gaO-Oq-DbT"/>
             </connections>
             <point key="canvasLocation" x="214.49275362318843" y="172.43303571428569"/>
