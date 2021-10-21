@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct AdoptEntity: Codable {
+    var date: String?
+    var folio: String?
+    var petData: PetEntity?
+}

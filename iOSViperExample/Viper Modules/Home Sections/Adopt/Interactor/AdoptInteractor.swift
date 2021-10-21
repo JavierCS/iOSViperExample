@@ -14,3 +14,7 @@ class AdoptInteractor {
 extension AdoptInteractor: AdoptProviderProtocol {
     
 }
+
+enum AdoptInteractorError: Error {
+    case cantResolveAdopt
+}

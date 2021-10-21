@@ -38,4 +38,15 @@ class CatsWireframe: ViperRouter, TabBarRouterItem {
                                     color: UIColor.systemPurple,
                                     wireframe: self)
     }
+    
+    func showAdoptView(for pet: PetEntity) {
+        let adoptView = AdoptView(nibName: "AdoptView", bundle: .main)
+        adoptView.petToAdopt = pet
+        adoptView.delegate = self.presenter
+        self.entry.navigationController?.present(adoptView, animated: true)
+    }
+    
+    func dismissAdoptView(completion: (() -> Void)?) {
+        self.entry.navigationController?.dismiss(animated: true, completion: completion)
+    }
 }

@@ -21,7 +21,7 @@ extension DogsPresenter: DogsEventHandlerProtocol {
     }
     
     func didSelect(_ dog: PetEntity) {
-        
+        self.wireframe?.showAdoptView(for: dog)
     }
 }
 
@@ -35,5 +35,21 @@ extension DogsPresenter: DogsOutputProtocol {
         case .failure(let error):
             self.view?.showAlert(message: error.localizedDescription)
         }
+    }
+}
+
+//MARK: - AdoptViewDelegate Management
+extension DogsPresenter: AdoptViewDelegate {
+    func success(entity: AdoptEntity) {
+        self.wireframe?.dismissAdoptView(completion: {
+            self.view?.showAlert(title: "Listo",
+                                 message: "Has adoptado una mascota, tu folio es \(entity.folio ?? "")")
+        })
+    }
+    
+    func failure(error: Error) {
+        self.wireframe?.dismissAdoptView(completion: {
+            self.view?.showAlert(message: error.localizedDescription)
+        })
     }
 }
