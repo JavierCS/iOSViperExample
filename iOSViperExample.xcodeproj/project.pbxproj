@@ -51,6 +51,10 @@
 		B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B295603F270FC9D5001DA7A4 /* LoginPresenter.swift */; };
 		B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956041270FC9EC001DA7A4 /* LoginRequestEntity.swift */; };
 		B2956044270FC9F9001DA7A4 /* LoginResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2956043270FC9F9001DA7A4 /* LoginResponseEntity.swift */; };
+		B2A91E882720E85A00C6561B /* DogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91E862720E85A00C6561B /* DogListTableViewCell.swift */; };
+		B2A91E892720E85A00C6561B /* DogListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A91E872720E85A00C6561B /* DogListTableViewCell.xib */; };
+		B2A91E8C2720EB8C00C6561B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91E8B2720EB8C00C6561B /* UIViewExtensions.swift */; };
+		B2A91E8E2721083000C6561B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91E8D2721083000C6561B /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +123,10 @@
 		B295603F270FC9D5001DA7A4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		B2956041270FC9EC001DA7A4 /* LoginRequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestEntity.swift; sourceTree = "<group>"; };
 		B2956043270FC9F9001DA7A4 /* LoginResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseEntity.swift; sourceTree = "<group>"; };
+		B2A91E862720E85A00C6561B /* DogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListTableViewCell.swift; sourceTree = "<group>"; };
+		B2A91E872720E85A00C6561B /* DogListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogListTableViewCell.xib; sourceTree = "<group>"; };
+		B2A91E8B2720EB8C00C6561B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B2A91E8D2721083000C6561B /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +283,7 @@
 		B2955FF2270FC493001DA7A4 /* iOSViperExample */ = {
 			isa = PBXGroup;
 			children = (
+				B2A91E8A2720EB7200C6561B /* Extensions */,
 				B2388559271013C100E25B5B /* Master */,
 				B238851A270FD66500E25B5B /* Viper Protocols */,
 				B2956026270FC4EC001DA7A4 /* Viper Modules */,
@@ -426,11 +435,8 @@
 		B2956033270FC715001DA7A4 /* Dogs */ = {
 			isa = PBXGroup;
 			children = (
-				B2388531271002FE00E25B5B /* View */,
-				B2388530271002E400E25B5B /* Interactor */,
-				B238852F271002DE00E25B5B /* Presenter */,
-				B238852E271002D700E25B5B /* Entity */,
-				B238852D271002CE00E25B5B /* Router */,
+				B2A91E852720E82B00C6561B /* Dogs List Table View Cell */,
+				B2A91E832720DA9900C6561B /* Dogs List */,
 			);
 			path = Dogs;
 			sourceTree = "<group>";
@@ -438,20 +444,10 @@
 		B2956034270FC71F001DA7A4 /* Cats */ = {
 			isa = PBXGroup;
 			children = (
-				B23885482710111A00E25B5B /* View */,
-				B23885472710111200E25B5B /* Interactor */,
-				B23885462710110B00E25B5B /* Presenter */,
-				B2388545271010F000E25B5B /* Entity */,
-				B2388544271010E500E25B5B /* Router */,
+				B2A91E822720DA7E00C6561B /* Cats Detail */,
+				B2A91E812720DA5300C6561B /* Cats List */,
 			);
 			path = Cats;
-			sourceTree = "<group>";
-		};
-		B2956035270FC731001DA7A4 /* Other Pets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Other Pets";
 			sourceTree = "<group>";
 		};
 		B2956037270FC774001DA7A4 /* Home Sections */ = {
@@ -459,7 +455,6 @@
 			children = (
 				B2956038270FC810001DA7A4 /* Profile */,
 				B2956034270FC71F001DA7A4 /* Cats */,
-				B2956035270FC731001DA7A4 /* Other Pets */,
 				B2956033270FC715001DA7A4 /* Dogs */,
 			);
 			path = "Home Sections";
@@ -470,6 +465,55 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B2A91E812720DA5300C6561B /* Cats List */ = {
+			isa = PBXGroup;
+			children = (
+				B23885482710111A00E25B5B /* View */,
+				B23885472710111200E25B5B /* Interactor */,
+				B23885462710110B00E25B5B /* Presenter */,
+				B2388545271010F000E25B5B /* Entity */,
+				B2388544271010E500E25B5B /* Router */,
+			);
+			path = "Cats List";
+			sourceTree = "<group>";
+		};
+		B2A91E822720DA7E00C6561B /* Cats Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cats Detail";
+			sourceTree = "<group>";
+		};
+		B2A91E832720DA9900C6561B /* Dogs List */ = {
+			isa = PBXGroup;
+			children = (
+				B2388531271002FE00E25B5B /* View */,
+				B2388530271002E400E25B5B /* Interactor */,
+				B238852F271002DE00E25B5B /* Presenter */,
+				B238852E271002D700E25B5B /* Entity */,
+				B238852D271002CE00E25B5B /* Router */,
+			);
+			path = "Dogs List";
+			sourceTree = "<group>";
+		};
+		B2A91E852720E82B00C6561B /* Dogs List Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91E862720E85A00C6561B /* DogListTableViewCell.swift */,
+				B2A91E872720E85A00C6561B /* DogListTableViewCell.xib */,
+			);
+			path = "Dogs List Table View Cell";
+			sourceTree = "<group>";
+		};
+		B2A91E8A2720EB7200C6561B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91E8B2720EB8C00C6561B /* UIViewExtensions.swift */,
+				B2A91E8D2721083000C6561B /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +622,7 @@
 			files = (
 				B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */,
 				B23885352710032B00E25B5B /* DogsView.xib in Resources */,
+				B2A91E892720E85A00C6561B /* DogListTableViewCell.xib in Resources */,
 				B2388556271012F100E25B5B /* CatsView.xib in Resources */,
 				B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */,
 				B295603C270FC97E001DA7A4 /* LoginView.xib in Resources */,
@@ -615,11 +660,13 @@
 				B238854E2710120300E25B5B /* CatsOutputProtocol.swift in Sources */,
 				B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */,
 				B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */,
+				B2A91E8C2720EB8C00C6561B /* UIViewExtensions.swift in Sources */,
 				B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */,
 				B2388528270FF32900E25B5B /* HomeTabBarView.swift in Sources */,
 				B238852A270FF99200E25B5B /* HomeTabBarWireframe.swift in Sources */,
 				B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */,
 				B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */,
+				B2A91E8E2721083000C6561B /* UIViewControllerExtensions.swift in Sources */,
 				B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */,
 				B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */,
 				B2388552271012D100E25B5B /* CatsProviderProtocol.swift in Sources */,
@@ -639,6 +686,7 @@
 				B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */,
 				B238855B271013D500E25B5B /* MasterViewController.swift in Sources */,
 				B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */,
+				B2A91E882720E85A00C6561B /* DogListTableViewCell.swift in Sources */,
 				B2955FF6270FC493001DA7A4 /* SceneDelegate.swift in Sources */,
 				B2388522270FD80C00E25B5B /* ViperInteractor.swift in Sources */,
 			);
@@ -818,6 +866,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -845,6 +894,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

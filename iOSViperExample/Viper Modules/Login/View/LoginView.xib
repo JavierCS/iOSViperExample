@@ -104,7 +104,7 @@
         </view>
     </objects>
     <resources>
-        <image name="PetLogo" width="840" height="793"/>
+        <image name="PetLogo" width="420" height="396.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

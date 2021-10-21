@@ -15,6 +15,7 @@ class HomeTabBarView: UITabBarController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemBackground
         self.delegate = self
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

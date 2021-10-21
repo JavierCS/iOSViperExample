@@ -11,7 +11,7 @@ class CatsView: MasterViewController {
 
     //MARK: - EventHandler
     weak var eventHandler: CatsEventHandlerProtocol?
-    
+    // https://www.dropbox.com/s/a8ct4l3kx9t5alh/Cats.json?dl=1
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialConfiguration()

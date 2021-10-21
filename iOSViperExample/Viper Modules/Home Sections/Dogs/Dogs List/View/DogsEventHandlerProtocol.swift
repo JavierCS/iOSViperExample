@@ -8,5 +8,6 @@
 import Foundation
 
 protocol DogsEventHandlerProtocol: AnyObject {
-    
+    func fetchDogsList()
+    func didTouchAdoptButton(pet: PetEntity)
 }

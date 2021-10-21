@@ -31,7 +31,7 @@ class LoginView: MasterViewController {
     
     //MARK: - Configuration Management
     private func initialConfiguration() {
-        self.addGradient(topColor: UIColor.systemBlue)
+        self.addGradient(topColor: UIColor.systemBlue, percentage: 0.30)
     }
     
     //MARK: - IBActions

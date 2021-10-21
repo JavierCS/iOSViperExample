@@ -8,5 +8,5 @@
 import Foundation
 
 protocol DogsOutputProtocol: AnyObject {
-    
+    func didFetchDogs(_ result: Result<[PetEntity], Error>)
 }
