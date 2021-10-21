@@ -58,6 +58,15 @@
 		B2A91E93272114E300C6561B /* CatListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A91E91272114E300C6561B /* CatListTableViewCell.xib */; };
 		B2A91E9527211DA600C6561B /* DogListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A91E9427211DA600C6561B /* DogListTableViewCell.xib */; };
 		B2A91E982721328E00C6561B /* Cats.json in Resources */ = {isa = PBXBuildFile; fileRef = B2A91E972721328E00C6561B /* Cats.json */; };
+		B2A91EA127213B0100C6561B /* AdoptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91E9F27213B0100C6561B /* AdoptView.swift */; };
+		B2A91EA227213B0100C6561B /* AdoptView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A91EA027213B0100C6561B /* AdoptView.xib */; };
+		B2A91EA427213B2C00C6561B /* AdoptWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EA327213B2C00C6561B /* AdoptWireframe.swift */; };
+		B2A91EA627213B4100C6561B /* AdoptEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EA527213B4100C6561B /* AdoptEntity.swift */; };
+		B2A91EA827213B5800C6561B /* AdoptPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EA727213B5800C6561B /* AdoptPresenter.swift */; };
+		B2A91EAB27213B6C00C6561B /* AdoptInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EAA27213B6C00C6561B /* AdoptInteractor.swift */; };
+		B2A91EAD27213BAE00C6561B /* AdoptProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EAC27213BAD00C6561B /* AdoptProviderProtocol.swift */; };
+		B2A91EAF27213BE100C6561B /* AdoptOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EAE27213BE100C6561B /* AdoptOutputProtocol.swift */; };
+		B2A91EB1272142A900C6561B /* AdoptEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A91EB0272142A900C6561B /* AdoptEventHandlerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +142,15 @@
 		B2A91E91272114E300C6561B /* CatListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatListTableViewCell.xib; sourceTree = "<group>"; };
 		B2A91E9427211DA600C6561B /* DogListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DogListTableViewCell.xib; sourceTree = "<group>"; };
 		B2A91E972721328E00C6561B /* Cats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cats.json; sourceTree = "<group>"; };
+		B2A91E9F27213B0100C6561B /* AdoptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptView.swift; sourceTree = "<group>"; };
+		B2A91EA027213B0100C6561B /* AdoptView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdoptView.xib; sourceTree = "<group>"; };
+		B2A91EA327213B2C00C6561B /* AdoptWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptWireframe.swift; sourceTree = "<group>"; };
+		B2A91EA527213B4100C6561B /* AdoptEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptEntity.swift; sourceTree = "<group>"; };
+		B2A91EA727213B5800C6561B /* AdoptPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptPresenter.swift; sourceTree = "<group>"; };
+		B2A91EAA27213B6C00C6561B /* AdoptInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptInteractor.swift; sourceTree = "<group>"; };
+		B2A91EAC27213BAD00C6561B /* AdoptProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptProviderProtocol.swift; sourceTree = "<group>"; };
+		B2A91EAE27213BE100C6561B /* AdoptOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptOutputProtocol.swift; sourceTree = "<group>"; };
+		B2A91EB0272142A900C6561B /* AdoptEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdoptEventHandlerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +478,7 @@
 		B2956037270FC774001DA7A4 /* Home Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B2A91E9927213A0B00C6561B /* Adopt */,
 				B2956038270FC810001DA7A4 /* Profile */,
 				B2956034270FC71F001DA7A4 /* Cats */,
 				B2956033270FC715001DA7A4 /* Dogs */,
@@ -531,6 +550,62 @@
 				B2A91E972721328E00C6561B /* Cats.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2A91E9927213A0B00C6561B /* Adopt */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91E9E27213AE300C6561B /* View */,
+				B2A91E9D27213A6300C6561B /* Interactor */,
+				B2A91E9C27213A3F00C6561B /* Presenter */,
+				B2A91E9B27213A1D00C6561B /* Entity */,
+				B2A91E9A27213A1400C6561B /* Router */,
+			);
+			path = Adopt;
+			sourceTree = "<group>";
+		};
+		B2A91E9A27213A1400C6561B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91EA327213B2C00C6561B /* AdoptWireframe.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B2A91E9B27213A1D00C6561B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91EA527213B4100C6561B /* AdoptEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B2A91E9C27213A3F00C6561B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91EAE27213BE100C6561B /* AdoptOutputProtocol.swift */,
+				B2A91EA727213B5800C6561B /* AdoptPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B2A91E9D27213A6300C6561B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91EAC27213BAD00C6561B /* AdoptProviderProtocol.swift */,
+				B2A91EAA27213B6C00C6561B /* AdoptInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B2A91E9E27213AE300C6561B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2A91EB0272142A900C6561B /* AdoptEventHandlerProtocol.swift */,
+				B2A91E9F27213B0100C6561B /* AdoptView.swift */,
+				B2A91EA027213B0100C6561B /* AdoptView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -640,6 +715,7 @@
 				B2956003270FC495001DA7A4 /* LaunchScreen.storyboard in Resources */,
 				B23885352710032B00E25B5B /* DogsView.xib in Resources */,
 				B2388556271012F100E25B5B /* CatsView.xib in Resources */,
+				B2A91EA227213B0100C6561B /* AdoptView.xib in Resources */,
 				B2956000270FC495001DA7A4 /* Assets.xcassets in Resources */,
 				B2A91E982721328E00C6561B /* Cats.json in Resources */,
 				B2A91E9527211DA600C6561B /* DogListTableViewCell.xib in Resources */,
@@ -672,6 +748,7 @@
 				B2388543271005B700E25B5B /* DogsEventHandlerProtocol.swift in Sources */,
 				B23885342710032B00E25B5B /* DogsView.swift in Sources */,
 				B23885372710037600E25B5B /* DogsWireframe.swift in Sources */,
+				B2A91EA627213B4100C6561B /* AdoptEntity.swift in Sources */,
 				B238854C271011C300E25B5B /* CatsPresenter.swift in Sources */,
 				B238851E270FD75900E25B5B /* ViperPresenter.swift in Sources */,
 				B2955FF8270FC493001DA7A4 /* ViewController.swift in Sources */,
@@ -679,16 +756,20 @@
 				B238854E2710120300E25B5B /* CatsOutputProtocol.swift in Sources */,
 				B2388519270FD16700E25B5B /* LoginEventHandlerProtocol.swift in Sources */,
 				B2388539271003BC00E25B5B /* DogsPresenter.swift in Sources */,
+				B2A91EA827213B5800C6561B /* AdoptPresenter.swift in Sources */,
 				B2A91E8C2720EB8C00C6561B /* UIViewExtensions.swift in Sources */,
 				B2956042270FC9EC001DA7A4 /* LoginRequestEntity.swift in Sources */,
 				B2A91E92272114E300C6561B /* CatListTableViewCell.swift in Sources */,
 				B2388528270FF32900E25B5B /* HomeTabBarView.swift in Sources */,
 				B238852A270FF99200E25B5B /* HomeTabBarWireframe.swift in Sources */,
 				B2956040270FC9D5001DA7A4 /* LoginPresenter.swift in Sources */,
+				B2A91EAB27213B6C00C6561B /* AdoptInteractor.swift in Sources */,
 				B295603E270FC99E001DA7A4 /* LoginInteractor.swift in Sources */,
+				B2A91EB1272142A900C6561B /* AdoptEventHandlerProtocol.swift in Sources */,
 				B2A91E8E2721083000C6561B /* UIViewControllerExtensions.swift in Sources */,
 				B2955FF4270FC493001DA7A4 /* AppDelegate.swift in Sources */,
 				B238851C270FD68700E25B5B /* ViperRouter.swift in Sources */,
+				B2A91EAD27213BAE00C6561B /* AdoptProviderProtocol.swift in Sources */,
 				B2388552271012D100E25B5B /* CatsProviderProtocol.swift in Sources */,
 				B238853D2710042F00E25B5B /* DogsInteractor.swift in Sources */,
 				B2388555271012F100E25B5B /* CatsView.swift in Sources */,
@@ -698,12 +779,15 @@
 				B23885502710122C00E25B5B /* CatsInteractor.swift in Sources */,
 				B2388520270FD7E100E25B5B /* ViperView.swift in Sources */,
 				B238854A2710115300E25B5B /* CatsWireframe.swift in Sources */,
+				B2A91EA427213B2C00C6561B /* AdoptWireframe.swift in Sources */,
 				B23885582710132200E25B5B /* CatsEventHandlerProtocol.swift in Sources */,
 				B238853B271003F200E25B5B /* PetEntity.swift in Sources */,
+				B2A91EAF27213BE100C6561B /* AdoptOutputProtocol.swift in Sources */,
 				B238852C2710010D00E25B5B /* HomeTabBarItemEntity.swift in Sources */,
 				B2388524270FDA5800E25B5B /* LoginProviderProtocol.swift in Sources */,
 				B2388517270FCC2600E25B5B /* LoginWireframe.swift in Sources */,
 				B2388526270FDB6900E25B5B /* LoginOutputProtocol.swift in Sources */,
+				B2A91EA127213B0100C6561B /* AdoptView.swift in Sources */,
 				B238855B271013D500E25B5B /* MasterViewController.swift in Sources */,
 				B238853F2710045F00E25B5B /* DogsProviderProtocol.swift in Sources */,
 				B2A91E882720E85A00C6561B /* DogListTableViewCell.swift in Sources */,
