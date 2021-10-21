@@ -10,10 +10,14 @@ import UIKit
 class DogListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardContainer: UIView!
-    @IBOutlet weak var petImage: UIImageView!
-    @IBOutlet weak var petLabel: UILabel!
+    @IBOutlet weak var dogImage: UIImageView!
+    @IBOutlet weak var dogNameLabel: UILabel!
+    @IBOutlet weak var dogAgeLabel: UILabel!
+    @IBOutlet weak var dogSexLabel: UILabel!
+    @IBOutlet weak var dogRaceLabel: UILabel!
+    @IBOutlet weak var dogDescriptionLabel: UILabel!
     
-    var pet: PetEntity?
+    private var pet: PetEntity?
         
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +32,10 @@ class DogListTableViewCell: UITableViewCell {
     
     func setPetData(_ dog: PetEntity) {
         self.pet = dog
-        self.petLabel.text = dog.name
+        self.dogNameLabel.text = dog.name
+        self.dogAgeLabel.text = dog.age
+        self.dogSexLabel.text = dog.sex
+        self.dogRaceLabel.text = dog.race
+        self.dogDescriptionLabel.text = dog.description
     }
-    
 }

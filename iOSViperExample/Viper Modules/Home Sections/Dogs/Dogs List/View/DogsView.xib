@@ -10,13 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DogsView" customModule="iOSViperExample" customModuleProvider="target">
             <connections>
-                <outlet property="buttonAdopt" destination="96z-tP-QJB" id="sOb-5X-PfE"/>
-                <outlet property="detailContentView" destination="0QK-A6-Xmy" id="kv8-Dt-dbw"/>
-                <outlet property="detailImageView" destination="tzB-UK-j3u" id="VrA-MJ-Emk"/>
-                <outlet property="detailLabelAge" destination="27E-NT-XAB" id="XCX-hO-TTm"/>
-                <outlet property="detailLabelName" destination="xku-le-4Wa" id="jLc-a5-9NW"/>
-                <outlet property="detailLabelRace" destination="D1L-eh-s2G" id="c3z-CL-LdT"/>
-                <outlet property="detailLabelSex" destination="3aB-Ws-kV8" id="qrD-h7-7Np"/>
                 <outlet property="dogsTable" destination="J7z-hv-5bz" id="gA0-Oe-w7Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,84 +19,24 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QK-A6-Xmy">
-                    <rect key="frame" x="20" y="653" width="374" height="189"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PetPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="tzB-UK-j3u">
-                            <rect key="frame" x="8" y="8" width="172" height="173"/>
-                        </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tNj-1v-g6C">
-                            <rect key="frame" x="188" y="8" width="178" height="77"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un perro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xku-le-4Wa">
-                                    <rect key="frame" x="0.0" y="0.0" width="178" height="23"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un perro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27E-NT-XAB">
-                                    <rect key="frame" x="0.0" y="23" width="178" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un perro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-Ws-kV8">
-                                    <rect key="frame" x="0.0" y="41" width="178" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona un perro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1L-eh-s2G">
-                                    <rect key="frame" x="0.0" y="59" width="178" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96z-tP-QJB">
-                            <rect key="frame" x="188" y="150" width="178" height="31"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="tinted" title="Adoptar"/>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="tNj-1v-g6C" firstAttribute="top" secondItem="0QK-A6-Xmy" secondAttribute="top" constant="8" id="39e-OY-7Bf"/>
-                        <constraint firstItem="96z-tP-QJB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tNj-1v-g6C" secondAttribute="bottom" constant="8" id="7Q0-1q-0AC"/>
-                        <constraint firstAttribute="trailing" secondItem="tNj-1v-g6C" secondAttribute="trailing" constant="8" id="B4u-FD-iv4"/>
-                        <constraint firstAttribute="trailing" secondItem="96z-tP-QJB" secondAttribute="trailing" constant="8" id="B7e-Bl-rsQ"/>
-                        <constraint firstItem="tNj-1v-g6C" firstAttribute="leading" secondItem="tzB-UK-j3u" secondAttribute="trailing" constant="8" id="FCc-gM-pdK"/>
-                        <constraint firstAttribute="bottom" secondItem="96z-tP-QJB" secondAttribute="bottom" constant="8" id="KYe-DQ-uqR"/>
-                        <constraint firstAttribute="bottom" secondItem="tzB-UK-j3u" secondAttribute="bottom" constant="8" id="Thi-pj-e0w"/>
-                        <constraint firstItem="96z-tP-QJB" firstAttribute="leading" secondItem="tzB-UK-j3u" secondAttribute="trailing" constant="8" id="UHm-S0-kbX"/>
-                        <constraint firstItem="tzB-UK-j3u" firstAttribute="leading" secondItem="0QK-A6-Xmy" secondAttribute="leading" constant="8" id="UOg-JN-7Dd"/>
-                        <constraint firstItem="tzB-UK-j3u" firstAttribute="width" secondItem="0QK-A6-Xmy" secondAttribute="width" multiplier="0.46" id="dU9-in-n0q"/>
-                        <constraint firstItem="tzB-UK-j3u" firstAttribute="top" secondItem="0QK-A6-Xmy" secondAttribute="top" constant="8" id="mT4-sz-lkh"/>
-                    </constraints>
-                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-hv-5bz">
-                    <rect key="frame" x="0.0" y="44" width="414" height="589"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="0QK-A6-Xmy" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.210938" id="610-Pf-Erh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0QK-A6-Xmy" secondAttribute="bottom" constant="20" id="BIR-lO-mmw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0QK-A6-Xmy" secondAttribute="trailing" constant="20" id="Nvc-4M-37p"/>
-                <constraint firstItem="0QK-A6-Xmy" firstAttribute="top" secondItem="J7z-hv-5bz" secondAttribute="bottom" constant="20" id="PhP-bd-CJx"/>
+                <constraint firstItem="J7z-hv-5bz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FwV-mh-UMu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="J7z-hv-5bz" secondAttribute="bottom" id="LKp-sp-A8w"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J7z-hv-5bz" secondAttribute="trailing" id="X2I-Ac-fHM"/>
                 <constraint firstItem="J7z-hv-5bz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lmI-kG-MiY"/>
-                <constraint firstItem="0QK-A6-Xmy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mTU-px-LSc"/>
                 <constraint firstItem="J7z-hv-5bz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zEx-w4-AsE"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="24.776785714285712"/>
         </view>
     </objects>
     <resources>
-        <image name="PetPlaceholder" width="430" height="375"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

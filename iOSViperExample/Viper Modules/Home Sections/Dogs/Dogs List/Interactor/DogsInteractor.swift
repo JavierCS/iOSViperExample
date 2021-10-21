@@ -12,8 +12,8 @@ class DogsInteractor {
 }
 
 //MARK: - DogsProviderProtocol Management
-enum DogsProviderError: Error {
-    case cantFetchDogs
+enum PetsProviderError: Error {
+    case cantFetchPets
 }
 
 extension DogsInteractor: DogsProviderProtocol {
@@ -28,7 +28,7 @@ extension DogsInteractor: DogsProviderProtocol {
                           if let error = error {
                               self?.output?.didFetchDogs(.failure(error))
                           } else {
-                              self?.output?.didFetchDogs(.failure(DogsProviderError.cantFetchDogs))
+                              self?.output?.didFetchDogs(.failure(PetsProviderError.cantFetchPets))
                           }
                       }
                       return

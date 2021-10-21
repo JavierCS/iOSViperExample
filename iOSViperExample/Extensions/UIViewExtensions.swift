@@ -15,4 +15,9 @@ extension UIView {
         self.layer.shadowOpacity = 0.3
         self.layer.cornerRadius = 20
     }
+    
+    func roundCorners(maskedCorners: CACornerMask = [.layerMaxXMinYCorner, .layerMinXMinYCorner, .layerMaxXMaxYCorner, .layerMinXMaxYCorner]) {
+        self.layer.maskedCorners = maskedCorners
+        self.layer.cornerRadius = 20
+    }
 }

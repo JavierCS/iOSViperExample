@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CatsOutputProtocol: AnyObject {
-    
+    func didFetchCats(_ result: Result<[PetEntity], Error>)
 }

@@ -8,5 +8,6 @@
 import Foundation
 
 protocol CatsEventHandlerProtocol: AnyObject {
-    
+    func fetchCatList()
+    func didSelect(_ cat: PetEntity)
 }

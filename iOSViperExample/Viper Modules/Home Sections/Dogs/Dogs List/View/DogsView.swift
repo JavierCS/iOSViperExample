@@ -9,19 +9,9 @@ import UIKit
 
 class DogsView: MasterViewController {
     //MARK: - UIElements
-    @IBOutlet weak var detailContentView: UIView!
-    @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailLabelName: UILabel!
-    @IBOutlet weak var detailLabelAge: UILabel!
-    @IBOutlet weak var detailLabelSex: UILabel!
-    @IBOutlet weak var detailLabelRace: UILabel!
-    @IBOutlet weak var buttonAdopt: UIButton!
     @IBOutlet weak var dogsTable: UITableView!
     
-    var refreshControl: UIRefreshControl!
-    
     //MARK: - Pets DataSource
-    private var selectedDog: PetEntity!
     private var dogs: [PetEntity] = []
     
     //MARK: - EventHandler
@@ -53,8 +43,6 @@ class DogsView: MasterViewController {
         self.dogsTable.reloadSections(IndexSet(integer: 0), with: .automatic)
         self.dogsTable.endUpdates()
     }
-    
-    //MARK: - UIElements Actions
 }
 
 //MARK: - UITableViewDataSource Management
@@ -77,12 +65,7 @@ extension DogsView: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dog = dogs[indexPath.row]
-        self.selectedDog = dog
-        self.detailLabelName.text = dog.name
-        self.detailLabelAge.text = dog.age
-        self.detailLabelSex.text = dog.sex
-        self.detailLabelRace.text = dog.race
-        self.buttonAdopt.isEnabled = true
+        let selectedDog = dogs[indexPath.row]
+        self.eventHandler?.didSelect(selectedDog)
     }
 }

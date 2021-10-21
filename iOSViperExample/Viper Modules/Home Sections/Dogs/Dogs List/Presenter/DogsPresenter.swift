@@ -20,7 +20,7 @@ extension DogsPresenter: DogsEventHandlerProtocol {
         self.interactor?.fetchDogs()
     }
     
-    func didTouchAdoptButton(pet: PetEntity) {
+    func didSelect(_ dog: PetEntity) {
         
     }
 }

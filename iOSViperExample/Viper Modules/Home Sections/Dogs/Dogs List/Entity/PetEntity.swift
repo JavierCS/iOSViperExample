@@ -10,6 +10,7 @@ import UIKit
 
 class PetEntity: Codable {
     var name: String?
+    var description: String?
     var age: String?
     var sex: String?
     var race: String?
@@ -18,6 +19,7 @@ class PetEntity: Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "name"
+        case description = "description"
         case age = "age"
         case sex = "sex"
         case race = "race"
