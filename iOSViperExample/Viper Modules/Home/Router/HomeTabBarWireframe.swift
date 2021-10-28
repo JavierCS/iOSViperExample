@@ -25,4 +25,7 @@ class HomeTabBarWireframe: ViperRouter {
         homeTabBarView.setTabBarItems(items)
     }
     
+    deinit {
+        print("DEINIT for HomeTabBarWireframe")
+    }
 }

@@ -11,6 +11,10 @@ class AdoptPresenter {
     var wireframe: AdoptWireframe?
     var interactor: AdoptInteractor?
     var view: AdoptView?
+    
+    deinit {
+        print("DEINIT for AdoptPresenter")
+    }
 }
 
 //MARK: - AdoptEventHandlerProtocol Management

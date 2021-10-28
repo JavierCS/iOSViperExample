@@ -43,6 +43,10 @@ class DogsView: MasterViewController {
         self.dogsTable.reloadSections(IndexSet(integer: 0), with: .automatic)
         self.dogsTable.endUpdates()
     }
+    
+    deinit {
+        print("DEINIT for DogsView")
+    }
 }
 
 //MARK: - UITableViewDataSource Management

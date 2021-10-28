@@ -45,4 +45,8 @@ class LoginWireframe: ViperRouter {
         navigationController.modalPresentationStyle = .fullScreen
         self.entry.navigationController?.present(navigationController, animated: true)
     }
+    
+    deinit {
+        print("DEINIT for LoginWireframe")
+    }
 }

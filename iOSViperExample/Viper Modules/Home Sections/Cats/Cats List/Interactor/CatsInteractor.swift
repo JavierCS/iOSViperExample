@@ -16,6 +16,10 @@ class CatsInteractor {
         catsProvider.output = self.output
         catsProvider.fetchCats()
     }
+    
+    deinit {
+        print("DEINIT for CatsInteractor")
+    }
 }
 
 class CatsServiceProvider: CatsProviderProtocol {
@@ -44,7 +48,7 @@ class CatsServiceProvider: CatsProviderProtocol {
     }
 }
 
-class CatsLocalProvider: CatsProviderProtocol {
+class CatsLocalProvider: CatsProviderProtocol {    
     var output: CatsOutputProtocol?
     
     func fetchCats() {

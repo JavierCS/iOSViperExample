@@ -32,4 +32,7 @@ class AdoptWireframe: ViperRouter {
         return router
     }
     
+    deinit {
+        print("DEINIT for AdoptWireframe")
+    }
 }

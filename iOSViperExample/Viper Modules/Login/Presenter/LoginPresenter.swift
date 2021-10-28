@@ -11,19 +11,24 @@ class LoginPresenter {
     var wireframe: LoginWireframe?
     var interactor: LoginProvider?
     var view: LoginView?
+    
+    deinit {
+        print("DEINIT for LoginPresenter")
+    }
 }
 
 //MARK: - LoginEventHandler Management
 extension LoginPresenter: LoginEventHandler {
     func didTouchLoginButton(user: String?, password: String?) {
-        guard let user = user,
-              let password = password else { return }
-        let loginRequestEntity = LoginRequestEntity(user: user, password: password)
-        self.interactor?.login(request: loginRequestEntity)
+//        guard let user = user,
+//              let password = password else { return }
+//        let loginRequestEntity = LoginRequestEntity(user: user, password: password)
+//        self.interactor?.login(request: loginRequestEntity)
+        self.wireframe?.goToHome()
     }
     
     func didTouchAboutThisAppButton() {
-        self.wireframe?.goToHome()
+        
     }
 }
 

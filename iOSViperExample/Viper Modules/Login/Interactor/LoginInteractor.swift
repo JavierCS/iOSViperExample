@@ -9,6 +9,10 @@ import Foundation
 
 class LoginInteractor {
     weak var output: LoginOutput?
+    
+    deinit {
+        print("DEINIT for LoginInteractor")
+    }
 }
 
 //MARK: - LoginProvider Management

@@ -11,6 +11,10 @@ class CatsPresenter {
     var wireframe: CatsWireframe?
     var interactor: CatsInteractor?
     var view: CatsView?
+    
+    deinit {
+        print("DEINIT for CatsPresenter")
+    }
 }
 
 //MARK: - //DogsEventHandlerProtocol Management

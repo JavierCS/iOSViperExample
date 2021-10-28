@@ -9,6 +9,10 @@ import Foundation
 
 class DogsInteractor {
     weak var output: DogsOutputProtocol?
+    
+    deinit {
+        print("DEINIT for DogsInteractor")
+    }
 }
 
 //MARK: - DogsProviderProtocol Management

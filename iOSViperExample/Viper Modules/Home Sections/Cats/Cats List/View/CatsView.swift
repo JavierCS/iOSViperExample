@@ -42,6 +42,10 @@ class CatsView: MasterViewController {
         self.catsTable.reloadSections(IndexSet(integer: 0), with: .automatic)
         self.catsTable.endUpdates()
     }
+    
+    deinit {
+        print("DEINIT for CatsView")
+    }
 }
 
 //MARK: - UITableViewDataSource Management

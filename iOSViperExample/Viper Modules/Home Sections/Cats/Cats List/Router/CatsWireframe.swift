@@ -49,4 +49,8 @@ class CatsWireframe: ViperRouter, TabBarRouterItem {
     func dismissAdoptView(completion: (() -> Void)?) {
         self.entry.navigationController?.dismiss(animated: true, completion: completion)
     }
+    
+    deinit {
+        print("DEINIT for CatsWireframe")
+    }
 }

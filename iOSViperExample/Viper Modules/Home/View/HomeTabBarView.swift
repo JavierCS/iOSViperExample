@@ -41,6 +41,10 @@ class HomeTabBarView: UITabBarController {
         guard let masterVC = items.first?.wireframe.entry as? MasterViewController else { return }
         self.tabBar.tintColor = masterVC.topColor
     }
+    
+    deinit {
+        print("DEINIT for HomeTabBarView")
+    }
 }
 
 //MARK: - UITabBarControllerDelegate Management

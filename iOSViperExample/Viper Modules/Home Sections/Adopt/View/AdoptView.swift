@@ -84,4 +84,8 @@ class AdoptView: MasterViewController {
             }
         }.resume()
     }
+    
+    deinit {
+        print("DEINIT for AdoptView")
+    }
 }

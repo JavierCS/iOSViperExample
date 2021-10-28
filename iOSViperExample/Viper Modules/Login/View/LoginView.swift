@@ -44,4 +44,8 @@ class LoginView: MasterViewController {
         self.eventHandler?.didTouchAboutThisAppButton()
     }
     
+    deinit {
+        print("DEINIT for LoginView")
+    }
+    
 }
